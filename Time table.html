@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABES Engineering College Timetable - CSE 18</title>
+  <style>
+    body {
+      font-family: Calibri, Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      margin: 30px;
+    }
+
+    h2, h3, h4 {
+      text-align: center;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 6px;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: #e0e0e0;
+    }
+
+    /* Subject Colors */
+    .ag { background-color: #a8d08d; }       /* Physics */
+    .aa { background-color: #ffd966; }       /* Math */
+    .akp { background-color: #c5e0b4; }      /* Physics Lab */
+    .nla { background-color: #fce4d6; }      /* Data Structure */
+    .dsh { background-color: #9bc2e6; }      /* AI */
+    .prg { background-color: #00b0f0; }      /* Electrical */
+    .ssi { background-color: #ffe699; }      /* Workshop */
+    .das { background-color: #f4b183; }      /* CAD */
+    .mentor { background-color: #d9d9d9; }   /* Mentor-Mentee */
+
+    .timetable td {
+      font-weight: bold;
+    }
+
+    .legend {
+      margin-top: 30px;
+      border: 2px solid #000;
+    }
+
+    .legend th {
+      background-color: #a6a6a6;
+      color: #fff;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>ABES Engineering College, Ghaziabad</h2>
+    <h3>Class Time Table</h3>
+    <p><strong>Course:</strong> B.Tech &nbsp;&nbsp; <strong>Semester/Section:</strong> I/CSE-18 &nbsp;&nbsp; <strong>Department:</strong> Computer Science & Engineering<br>
+    <strong>Class Room No:</strong> BH-309 &nbsp;&nbsp; <strong>w.e.f:</strong> 13.10.2025 &nbsp;&nbsp; <strong>Session:</strong> 2025-26, ODD Semester</p>
+  </div>
+
+  <table class="timetable">
+    <tr>
+      <th>Time / Day</th>
+      <th>I<br>08:50–09:40</th>
+      <th>II<br>09:40–10:30</th>
+      <th>III<br>10:40–11:30</th>
+      <th>IV<br>11:30–12:20</th>
+      <th>V<br>12:20–01:10</th>
+      <th>VI<br>01:10–02:00</th>
+      <th>VII<br>02:00–02:50</th>
+      <th>VIII<br>02:50–03:40</th>
+      <th>IX<br>03:40–04:30</th>
+    </tr>
+
+    <!-- Monday -->
+    <tr>
+      <th>Monday</th>
+      <td class="ag">25AS101<br>(AG)<br>BH-309</td>
+      <td class="aa">25AS102<br>(AA)<br>BH-309</td>
+      <td colspan="2" class="akp">25AS151 (AG, AKP)<br>KC Block III Floor<br>(KC-310)</td>
+      <td></td>
+      <td></td>
+      <td class="nla">25CS151<br>(NLA)<br>BH-309</td>
+      <td class="dsh">25AS103<br>(DSH)<br>BH-309</td>
+      <td class="prg">25EL101<br>(PRG)<br>BH-309</td>
+    </tr>
+
+    <!-- Tuesday -->
+    <tr>
+      <th>Tuesday</th>
+      <td class="prg">25EL151<br>(PRG)<br>RJ-BASEMENT</td>
+      <td class="nla">25CS101<br>(NLA)<br>BH-309</td>
+      <td class="nla">25CS101<br>(NLA)<br>BH-309</td>
+      <td></td>
+      <td></td>
+      <td class="ssi">25VA151<br>(SSI)<br>BH-309</td>
+      <td class="prg">25EL101<br>(PRG)<br>BH-309</td>
+      <td class="aa">25AS102<br>(AA)<br>BH-309</td>
+      <td></td>
+    </tr>
+
+    <!-- Wednesday -->
+    <tr>
+      <th>Wednesday</th>
+      <td class="ag">25AS101<br>(AG)<br>BH-309</td>
+      <td class="prg">25EL101<br>(PRG)<br>BH-309</td>
+      <td class="aa">25AS102<br>(AA)<br>BH-309</td>
+      <td class="dsh">25AS103<br>(DSH)<br>BH-309</td>
+      <td></td>
+      <td class="aa">25AS102<br>(AA)<br>BH-309</td>
+      <td class="nla">25CS101<br>(NLA)<br>BH-309</td>
+      <td class="nla">25CS101<br>(NLA)<br>BH-309</td>
+      <td></td>
+    </tr>
+
+    <!-- Thursday -->
+    <tr>
+      <th>Thursday</th>
+      <td class="prg">25EL101<br>(PRG)<br>BH-309</td>
+      <td class="ag">25AS101<br>(AG)<br>BH-309</td>
+      <td class="dsh">25AS103<br>(DSH)<br>BH-309</td>
+      <td class="aa">25AS102<br>(AA)<br>BH-309</td>
+      <td></td>
+      <td class="ssi">25VA151<br>(SSI)<br>BH-309</td>
+      <td colspan="2" class="mentor">Mentor–Mentee<br>(AA, PRG)<br>BH-309</td>
+      <td class="sha">25AI101<br>(SHA)<br>BH-309</td>
+    </tr>
+
+    <!-- Friday -->
+    <tr>
+      <th>Friday</th>
+      <td class="aa">25AS102<br>(AA)<br>BH-309</td>
+      <td class="prg">25EL101<br>(PRG)<br>BH-309</td>
+      <td colspan="2" class="das">25ME152 (DAS, VKS)<br>RJ Block I Floor<br>(RJ-109)</td>
+      <td></td>
+      <td class="dsh">25AS103<br>(DSH)<br>BH-309</td>
+      <td class="dsh">25AS103<br>(DSH)<br>BH-309</td>
+      <td class="aa">25AS102<br>(AA)<br>BH-309</td>
+      <td></td>
+    </tr>
+  </table>
+
+  <!-- Legend -->
+  <table class="legend">
+    <tr>
+      <th>SUBCODE</th>
+      <th>SUBNAME</th>
+      <th>FACULTY (Abbr.)</th>
+      <th>LABCODE</th>
+      <th>LAB NAME</th>
+      <th>FACULTY (Abbr.)</th>
+    </tr>
+    <tr class="ag">
+      <td>25AS101</td>
+      <td>Applied Physics</td>
+      <td>Dr. Anubha Gupta (AG)</td>
+      <td>25CS151</td>
+      <td>Data Structure Lab</td>
+      <td>Ms. Nidhi Shalya (NLA)</td>
+    </tr>
+    <tr class="prg">
+      <td>25EL101</td>
+      <td>Basics of Electrical Engg.</td>
+      <td>Mr. Praveen Kr. Gangwashi (PRG)</td>
+      <td>25EL151</td>
+      <td>Basic Electrical Engg. Lab</td>
+      <td>Mr. Praveen Kr. Gangwashi (PRG)</td>
+    </tr>
+    <tr class="aa">
+      <td>25AS102</td>
+      <td>Fundamentals of Linear Algebra & Statistics</td>
+      <td>Dr. Ashish Arora (AA)</td>
+      <td>25ME152</td>
+      <td>CAD Lab</td>
+      <td>Dr. Abhishek Saxena (ASX)</td>
+    </tr>
+    <tr class="dsh">
+      <td>25AS103</td>
+      <td>Environment & Sustainability</td>
+      <td>Dr. Anubha Gupta (AG)</td>
+      <td>25VA151</td>
+      <td>Web Designing Workshop I</td>
+      <td>Mr. Sandeep Soni (SSI)</td>
+    </tr>
+    <tr class="sha">
+      <td>25AI101</td>
+      <td>Essentials of AI</td>
+      <td>Ms. Shalu (SHA)</td>
+      <td>—</td>
+      <td>Mentor–Mentee</td>
+      <td>Mr. Ashish Arora (AA), Mr. Praveen (PRG)</td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    <p><b>Note:</b> Timetable subject to change if required.</p>
+  </div>
+</body>
+</html>
