@@ -1,1 +1,47 @@
-git
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL ASSIGNMENT</title>
+</head>
+
+    <style>
+        #main{
+            width: 940px;
+            height: 300px;
+            background-color: black;
+            border: 12px dashed blue;
+            margin: 0px auto;
+            display: flex;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        html, *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: lightgreen;
+        }
+        .box:nth-child(2){
+            margin: 0 auto;
+        }
+
+       
+    </style>
+
+<body>
+     <div id="main">
+            <div class="box"></div>
+             <div class="box"></div>
+              <div class="box"></div>
+        </div>
+
+</body>
+</html>
