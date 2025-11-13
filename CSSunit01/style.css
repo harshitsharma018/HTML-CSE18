@@ -1,0 +1,12 @@
+body{
+
+    margin: 0;
+    padding: 0;
+
+    background-color: cyan;
+    background-image: url(dl.beatsnoop.com-3000-eLySPQ7UOJ.jpg);
+    background-repeat: repeat-x;
+    background-position: top right;
+    background-size: cover;
+    background: url('dl.beatsnoop.com-3000-eLySPQ7UOJ.jpg'); 
+}
