@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            background: #fafafa;
+        }
+
+        .container {
+            width: 800px;
+            margin-top: 20px;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .middle {
+            display: flex;
+            gap: 10px;
+        }
+
+        .section {
+            flex: 2;
+            height: 200px;
+        }
+
+        .article {
+            flex: 2;
+            height: 200px;
+            margin-top: 10px;
+        }
+
+        .aside {
+            flex: 1;
+            height: 410px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">&lt;header&gt;</div>
+        <div class="box">&lt;nav&gt;</div>
+
+        <div class="middle">
+            <div style="width: 100%">
+                <div class="box section">&lt;section&gt;</div>
+                <div class="box article">&lt;article&gt;</div>
+            </div>
+            <div class="box aside">&lt;aside&gt;</div>
+        </div>
+
+        <div class="box">&lt;footer&gt;</div>
+    </div>
+
+</body>
+</html>
